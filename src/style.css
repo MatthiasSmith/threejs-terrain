@@ -1,20 +1,90 @@
-*
-{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 html,
-body
-{
-    height: 100vh;
-    font-family: 'Poppins';
+body {
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: rgb(27, 27, 31);
 }
 
-.webgl
-{
-    position: fixed;
+.webgl {
+  position: fixed;
+  top: 18%;
+  right: 0;
+  outline: none;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: white;
+  margin: 8rem 0;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 4.75rem;
+  padding: 0 1.5rem;
+}
+
+p {
+  font-size: 1.3rem;
+  color: hsl(210, 10%, 50%);
+  margin: 1.25rem auto 0;
+  max-width: 33rem;
+  line-height: 1.75rem;
+  padding: 0 1.5rem;
+}
+
+button {
+  appearance: none;
+  font-size: 1.3rem;
+  padding: 0.65em 1.5em;
+  margin-top: 3rem;
+  background-color: rgb(0, 114, 255);
+  border: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 0.35rem;
+  cursor: pointer;
+  transition: background-color 300ms ease;
+}
+
+button:hover {
+  background-color: rgb(0, 135, 255);
+}
+
+@media screen and (min-width: 64em) {
+  .webgl {
     top: 0;
-    left: 0;
-    outline: none;
+    left: 25%;
+  }
+
+  .container {
+    margin: 16rem 8rem;
+    text-align: left;
+  }
+
+  h1 {
+    padding: 0;
+  }
+
+  p {
+    margin: 1.25rem 0;
+    padding: 0;
+  }
+  
+  button {
+      margin-top: 1.5rem;
+  }
 }
